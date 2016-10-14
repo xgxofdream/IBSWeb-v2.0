@@ -1,0 +1,826 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/UI_Commom.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/MainJS.js"></script>
+
+<script type="text/javascript" src="js/welcome.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+
+<script src="js/slider.js"></script>	
+<script src="js/indexJS.js"></script> 
+
+<script src="js/common.js"></script>
+<script src="js/input_control2.js"></script>  
+
+
+<script src="js/DatePicker/WdatePicker.js"></script> 
+ 
+<title>IBS Project</title>
+</head>
+
+<body>
+<div class="toplist">
+       
+        <div class="header-site-focuse" style="margin-left:30%">
+            <dt><a href="index.php">首页</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">肠道健康</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">研究成果</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="http://cmcs.hkbu.edu.hk/" target="_blank">关于我们</a></dt>
+        </div>
+        <div class="top-list0">
+	        <li class="one-menu" onmouseover="showSubMenu('mine_center');" onmouseout="hideSubMenu('mine_center');">
+            	<div>個人中心&nbsp;&nbsp;&nbsp;▼&nbsp;&nbsp;</div>
+	            
+                <ul id="mine_center" class="sub-menu">
+	            	<a href="#"><li>修改密碼</li></a>
+	            	<a href="index.php?user&type=unlogin"><li>退出登錄</li></a>
+                    <a href="index.php?manage&type=sample_management"><li>管理界面</li></a>
+                    <a href="index.php"><li>网站首页</li></a>
+	            </ul>
+                
+	        </li>
+	        <li>|</li>
+            <li>欢迎您，<?=$data['user_tel'];?></li>
+         </div>  
+        
+    </div>
+<div class="toplist2">
+        
+        <div class="header-site-focuse" style="margin-left:30%">
+            <dt><a href="index.php">首页</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">肠道健康</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">研究成果</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="http://cmcs.hkbu.edu.hk/" target="_blank">关于我们</a></dt>
+        </div>
+        <div class="top-list0">
+	        <li class="one-menu" onmouseover="showSubMenu('mine_center2');" onmouseout="hideSubMenu('mine_center2');">
+            	<div>個人中心&nbsp;&nbsp;&nbsp;▼&nbsp;&nbsp;</div>
+	            
+                <ul id="mine_center" class="sub-menu">
+	            	<a href="#"><li>修改密碼</li></a>
+	            	<a href="index.php?user&type=unlogin"><li>退出登錄</li></a>
+                    <a href="index.php?manage&type=sample_management"><li>管理界面</li></a>
+                    <a href="index.php"><li>网站首页</li></a>
+	            </ul>
+                
+	        </li>
+	        <li>|</li>
+            <li>欢迎您，<?=$data['user_tel'];?></li>
+         </div>  
+        
+    </div>
+  	
+<div class="top-temp">&nbsp;</div><div class="project-title">腸易激綜合症亞型和中醫證型的分佈規律及菌群代謝研究<br>一般性資料調查表</div>
+<div class="menu-container">
+<label><a href="index.php?survey&type=basic_info">基本资料</label></a>
+<label><a href="index.php?survey&type=health_info">健康调查</label></a>
+<label><a href="index.php?survey&type=diet_info">饮食调查</label></a>
+<label><a href="index.php?survey&type=lifestyle_info">生活方式调查</label></a>
+<label><a href="index.php?survey&type=self_estimation">IBS自评估</label></a>
+</div>
+<form method="post" name="diet_info" action="index.php?input&type=diet_info"  enctype="multipart/form-data">
+		
+<div class="info-container">
+<div id="part5" class="part-container">
+  <div class="info-part">飲食習慣調查（第1部分）</div>
+<hr>
+<div class="info-item">
+	<li>
+		<label for="rice_frequency">1.大米製品的食用次數：（包括米飯、粥及河粉、腸粉、年糕等其他大米制品）。</label><br>
+		<label><input name="rice_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="rice_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="rice_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="rice_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="rice_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="rice_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="rice_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="rice_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="rice_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="rice_volumn">
+			大米製品的食用份量：（包括米飯、粥及河粉、腸粉、年糕等其他大米制品）。<br>
+			<font class="note">注：1份 相當於 1小碗白米飯（或糙米飯）（約50g）<br>或（1碗粥）<br>或（1/2碟腸粉(河粉)）<br>或（1/2碟年糕）</font>
+		</label><br>
+		<label><input name="rice_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="rice_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="rice_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="rice_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="rice_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="rice_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="wheat_frequency">2.面粉類製品的食用次數：（包括麵條、包、麵包、蛋糕等）。</label><br>
+		<label><input name="wheat_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="wheat_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="wheat_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="wheat_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="wheat_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="wheat_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="wheat_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="wheat_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="wheat_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="wheat_volumn">
+			面粉類製品的食用份量：（包括麵條、包、麵包、蛋糕等）。<br>
+			<font class="note">注：1份 相當於 1小碗麵條（約50g）<br>或（1/2個大包（1個叉燒包或蓮蓉包））<br>或（1/2個麵包）<br>或（1/2個蛋糕）</font>
+		</label><br>
+		<label><input name="wheat_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="wheat_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="wheat_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="wheat_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="wheat_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="wheat_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="other_grain_frequency">3.其他雜糧類的食用次數：（包括燕麥、小米、玉米、高粱、大麥、小麥等）。</label><br>
+		<label><input name="other_grain_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="other_grain_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="other_grain_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="other_grain_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="other_grain_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="other_grain_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="other_grain_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="other_grain_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="other_grain_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="other_grain_volumn">
+			其他雜糧類的食用份量：（包括燕麥、小米、玉米、高粱、大麥、小麥等）。<br>
+			<font class="note">注：1份 相當於 1小碗麥皮（約50g）<br>或（1/2個玉米）<br>或（1小碗雜糧飯）</font>
+		</label><br>
+		<label><input name="other_grain_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="other_grain_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="other_grain_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="other_grain_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="other_grain_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="other_grain_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="potato_frequency">4.薯類食物的食用次數：（包括馬鈴薯、紅薯、芋頭、淮山、蓮藕、粉葛等）。</label><br>
+		<label><input name="potato_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="potato_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="potato_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="potato_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="potato_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="potato_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="potato_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="potato_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="potato_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="potato_volumn">
+			薯類食物的食用份量：（包括馬鈴薯、紅薯、芋頭、淮山、蓮藕、粉葛等）。<br>
+			<font class="note">注：1份 相當於 1個網球大小的薯仔（約50g）<br>或（1個網球大小的紅薯）<br>或（1小節淮山）</font>
+		</label><br>
+		<label><input name="potato_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="potato_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="potato_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="potato_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="potato_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="potato_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="bean_frequency">5.豆類及其制品類的食用次數：（包括大豆、黃豆、紅豆、綠豆、眉豆、腰豆等及其制品如豆腐、豆漿等）。</label><br>
+		<label><input name="bean_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="bean_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="bean_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="bean_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="bean_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="bean_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="bean_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="bean_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="bean_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="bean_volumn">
+			豆類及其制品類的食用份量：（包括大豆、黃豆、紅豆、綠豆、眉豆、腰豆等及其制品如豆腐、豆漿等）。<br>
+			<font class="note">注：1份 相當於 1/2碗煮熟的豆類（大豆、眉豆等）（約50g）<br>或（1/2磚豆腐）<br>或（1杯豆漿(8安士或240毫升)）</font>
+		</label><br>
+		<label><input name="bean_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="bean_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="bean_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="bean_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="bean_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="bean_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="vegetable_frequency">6.	蔬菜的食用次數：（除第4題所述薯類外的蔬菜）。</label><br>
+		<label><input name="vegetable_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="vegetable_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="vegetable_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="vegetable_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="vegetable_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="vegetable_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="vegetable_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="vegetable_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="vegetable_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="vegetable_volumn">
+			蔬菜的食用份量：（除第4題所述薯類外的蔬菜）。<br>
+			<font class="note">注：1份 相當於 1碗（容量約250ml）未經煮熟的蔬菜沙律<br>或（1/2碟煮熟的葉、瓜或根莖類蔬菜（菜心、節瓜等））<br>或（1/2碗煮熟的菌類（蘑菇、冬菇等））</font>
+		</label><br>
+		<label><input name="vegetable_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="vegetable_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="vegetable_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="vegetable_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="vegetable_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="vegetable_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="fruit_frequency">7.	生果的食用次數：</label><br>
+		<label><input name="fruit_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="fruit_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="fruit_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="fruit_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="fruit_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="fruit_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="fruit_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="fruit_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="fruit_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="fruit_volumn">
+			生果的食用份量：<br>
+			<font class="note">注：1份 相當於 1個小型的生果（香蕉、蘋果、橙、桃等）<br>或（1/2個中型生果（西柚、小西瓜等））<br>或（1/4個大型生果（榴蓮、大西瓜、蜜瓜等））<br>或（1杯顆粒型生果（士多啤梨、車厘子、藍莓等））</font>
+		</label><br>
+		<label><input name="fruit_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="fruit_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="fruit_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="fruit_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="fruit_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="fruit_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="red_meat_frequency">8.	紅肉的食用次數：（包括豬肉、牛肉、羊肉、兔肉等）。</label><br>
+		<label><input name="red_meat_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="red_meat_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="red_meat_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="red_meat_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="red_meat_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="red_meat_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="red_meat_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="red_meat_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="red_meat_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="red_meat_volumn">
+			紅肉的食用份量：（包括豬肉、牛肉、羊肉、兔肉等）。<br>
+			<font class="note">注：1份 相當於 1個網球大小經過煮熟的肉類（牛肉、豬肉、羊肉等）</font>
+		</label><br>
+		<label><input name="red_meat_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="red_meat_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="red_meat_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="red_meat_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="red_meat_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="red_meat_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="white_meat_frequency">9.白肉的食用次數：（包括禽類（雞肉、鴨肉、鵝肉等）、海鮮等）。</label><br>
+		<label><input name="white_meat_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="white_meat_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="white_meat_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="white_meat_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="white_meat_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="white_meat_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="white_meat_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="white_meat_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="white_meat_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="white_meat_volumn">
+			白肉的食用份量：（包括禽類（雞肉、鴨肉、鵝肉等）、海鮮等）。<br>
+			<font class="note">注：1份 相當於 1個網球大小經過煮熟的禽類（雞肉、鴨肉、鵝肉等）<br>或（1/2碟海鮮類（蝦、蟹、蜆、螺、龍蝦等））<br>或（1/2條魚類（石斑、鯧魚等））</font>
+		</label><br>
+		<label><input name="white_meat_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="white_meat_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="white_meat_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="white_meat_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="white_meat_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="white_meat_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+</div>
+			<div id="part6" class="part-container">
+<div class="info-part">飲食習慣調查（第2部分）</div>
+<hr>
+<div class="info-item">
+	<li>
+		<label for="animal_organ_frequency">10.食用動物內臟及血製品的次數：</label><br>
+		<label><input name="animal_organ_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="animal_organ_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="animal_organ_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="animal_organ_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="animal_organ_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="animal_organ_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="animal_organ_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="animal_organ_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="animal_organ_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="animal_organ_volumn">
+			食用動物內臟及血製品的份量：<br>
+			<font class="note">注：1份 相當於 1個小碗經過煮熟的動物內臟（豬膶等）<br>或（1份雞肝醬或鵝肝醬）<br>或（1個小碗經過煮熟的動物血製品（豬紅等））</font>
+		</label><br>
+		<label><input name="animal_organ_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="animal_organ_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="animal_organ_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="animal_organ_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="animal_organ_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="animal_organ_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="milk_frequency">11.食用奶類製品的次數：</label><br>
+		<label><input name="milk_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="milk_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="milk_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="milk_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="milk_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="milk_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="milk_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="milk_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="milk_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="milk_volumn">
+			食用奶類製品的份量：<br>
+			<font class="note">注：1份 相當於 1杯（8安士或240毫升）的鮮奶或乳<br>或（2片芝士）</font>
+		</label><br>
+		<label><input name="milk_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="milk_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="milk_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="milk_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="milk_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="milk_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="egg_frequency">12.食用蛋類的次數：</label><br>
+		<label><input name="egg_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="egg_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="egg_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="egg_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="egg_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="egg_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="egg_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="egg_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="egg_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="egg_volumn">
+			食用蛋類的份量：<br>
+			<font class="note">注：1份 相當於 1個雞蛋</font>
+		</label><br>
+		<label><input name="egg_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="egg_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="egg_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="egg_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="egg_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="egg_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="plant_oil_frequency">13.煮餸時使用植物油的次數：（包括菜籽油、花生油、大豆油等）。</label><br>
+		<label><input name="plant_oil_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="plant_oil_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="plant_oil_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="plant_oil_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="plant_oil_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="plant_oil_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="plant_oil_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="plant_oil_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="plant_oil_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="plant_oil_volumn">
+			煮餸時使用植物油的份量：（包括菜籽油、花生油、大豆油等）。<br>
+			<font class="note">注：1份 相當於 1個雞蛋</font>
+		</label><br>
+		<label><input name="plant_oil_volumn" type="radio" value="每次少於1茶匙" checked>每次少於1茶匙</label>
+		<label><input name="plant_oil_volumn" type="radio" value="每次1~2茶匙">每次1~2茶匙</label>
+		<label><input name="plant_oil_volumn" type="radio" value="每次2~3茶匙">每次2~3茶匙</label>
+		<label><input name="plant_oil_volumn" type="radio" value="每次3~4茶匙">每次3~4茶匙</label>
+		<label><input name="plant_oil_volumn" type="radio" value="每次4~5茶匙">每次4~5茶匙</label>
+		<label><input name="plant_oil_volumn" type="radio" value="每次5茶匙以上">每次5茶匙以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="animal_oil_frequency">14.食用動物油的次數：（包括豬油、牛油等）。</label><br>
+		<label><input name="animal_oil_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="animal_oil_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="animal_oil_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="animal_oil_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="animal_oil_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="animal_oil_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="animal_oil_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="animal_oil_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="animal_oil_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="animal_oil_volumn">
+			食用動物油的份量：（包括豬油、牛油等）。<br>
+			<font class="note">注：1份 相當於 1小盒牛油 (7g)</font>
+		</label><br>
+		<label><input name="animal_oil_volumn" type="radio" value="每次少於1份" checked>每次少於1份</label>
+		<label><input name="animal_oil_volumn" type="radio" value="每次1~2份">每次1~2份</label>
+		<label><input name="animal_oil_volumn" type="radio" value="每次2~3份">每次2~3份</label>
+		<label><input name="animal_oil_volumn" type="radio" value="每次3~4份">每次3~4份</label>
+		<label><input name="animal_oil_volumn" type="radio" value="每次4~5份">每次4~5份</label>
+		<label><input name="animal_oil_volumn" type="radio" value="每次5份以上">每次5份以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="light_drink_frequency">15.飲用酒精類飲料的次數：（包括果酒、啤酒、調味酒、紅酒等）。</label><br>
+		<label><input name="light_drink_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="light_drink_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="light_drink_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="light_drink_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="light_drink_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="light_drink_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="light_drink_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="light_drink_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="light_drink_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="light_drink_volumn">飲用酒精類飲料的份量：（包括果酒、啤酒、調味酒、紅酒等）。</label><br>
+		<label><input name="light_drink_volumn" type="radio" value="每次少於250mL" checked>每次少於250mL</label>
+		<label><input name="light_drink_volumn" type="radio" value="每次250~500mL">每次250~500mL</label>
+		<label><input name="light_drink_volumn" type="radio" value="每次500~750mL">每次500~750mL</label>
+		<label><input name="light_drink_volumn" type="radio" value="每次750~1000mL">每次750~1000mL</label>
+		<label><input name="light_drink_volumn" type="radio" value="每次1L或以上">每次1L或以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="strong_drink_frequency">16.飲用烈酒的次數：（包括白酒、烈性洋酒等）。</label><br>
+		<label><input name="strong_drink_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="strong_drink_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="strong_drink_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="strong_drink_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="strong_drink_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="strong_drink_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="strong_drink_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="strong_drink_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="strong_drink_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="strong_drink_volumn">飲用烈酒的份量：（包括白酒、烈性洋酒等）。</label><br>
+		<label><input name="strong_drink_volumn" type="radio" value="每次少於250mL" checked>每次少於250mL</label>
+		<label><input name="strong_drink_volumn" type="radio" value="每次250~500mL">每次250~500mL</label>
+		<label><input name="strong_drink_volumn" type="radio" value="每次500~750mL">每次500~750mL</label>
+		<label><input name="strong_drink_volumn" type="radio" value="每次750~1000mL">每次750~1000mL</label>
+		<label><input name="strong_drink_volumn" type="radio" value="每次1L或以上">每次1L或以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="tea_frequency">17.飲用茶類飲料的次數：</label><br>
+		<label><input name="tea_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="tea_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="tea_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="tea_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="tea_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="tea_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="tea_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="tea_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="tea_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="tea_volumn">飲用茶類飲料的份量：</label><br>
+		<label><input name="tea_volumn" type="radio" value="每次少於250mL" checked>每次少於250mL</label>
+		<label><input name="tea_volumn" type="radio" value="每次250~500mL">每次250~500mL</label>
+		<label><input name="tea_volumn" type="radio" value="每次500~750mL">每次500~750mL</label>
+		<label><input name="tea_volumn" type="radio" value="每次750~1000mL">每次750~1000mL</label>
+		<label><input name="tea_volumn" type="radio" value="每次1L或以上">每次1L或以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="coffee_frequency">18.飲用咖啡類飲料的次數：</label><br>
+		<label><input name="coffee_frequency" type="radio" value="從不食用" checked>從不食用</label>
+		<label><input name="coffee_frequency" type="radio" value="每月少於1次">每月少於1次</label>
+		<label><input name="coffee_frequency" type="radio" value="每月1~3次">每月1~3次</label>
+		<label><input name="coffee_frequency" type="radio" value="每週1次">每週1次</label>
+		<label><input name="coffee_frequency" type="radio" value="每週2~3次">每週2~3次</label>
+		<label><input name="coffee_frequency" type="radio" value="每週4~6次">每週4~6次</label>
+		<label><input name="coffee_frequency" type="radio" value="每天1次">每天1次</label>
+		<label><input name="coffee_frequency" type="radio" value="每天2次">每天2次</label>
+		<label><input name="coffee_frequency" type="radio" value="每天3次及以上">每天3次及以上</label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label for="coffee_volumn">飲用咖啡類飲料的份量：</label><br>
+		<label><input name="coffee_volumn" type="radio" value="每次少於250mL" checked>每次少於250mL</label>
+		<label><input name="coffee_volumn" type="radio" value="每次250~500mL">每次250~500mL</label>
+		<label><input name="coffee_volumn" type="radio" value="每次500~750mL">每次500~750mL</label>
+		<label><input name="coffee_volumn" type="radio" value="每次750~1000mL">每次750~1000mL</label>
+		<label><input name="coffee_volumn" type="radio" value="每次1L或以上">每次1L或以上</label>
+	</li>
+</div>
+</div>
+			<div id="part7" class="part-container">
+<div class="info-part">飲食行為及態度調查</div>
+<div class="note">下列是關於您平時飲食行為方面的習慣和態度的一些描述，請您根據您本人的情況回答這些描述是否符合您的個人情況：</div>
+<hr>
+<div class="info-item" onchange="checkRadio('preference_sweet','preference_sweet_check')">
+	<li>
+		<label for="preference_sweet">1.相較於其他口味，我更喜歡甜食：</label>
+		<font id="preference_sweet_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_sweet" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_sweet" type="radio" value="符合">符合</label>
+		<label><input name="preference_sweet" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_sweet" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_sweet" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_sour','preference_sour_check')">
+	<li>
+		<label for="preference_sour">2.相較於其他口味，我更喜歡酸味的食物：</label>
+		<font id="preference_sour_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_sour" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_sour" type="radio" value="符合">符合</label>
+		<label><input name="preference_sour" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_sour" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_sour" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_bitter','preference_bitter_check')">
+	<li>
+		<label for="preference_bitter">3.相較於其他口味，我更喜歡苦味的食物：</label>
+		<font id="preference_bitter_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_bitter" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_bitter" type="radio" value="符合">符合</label>
+		<label><input name="preference_bitter" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_bitter" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_bitter" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_spicy','preference_spicy_check')">
+	<li>
+		<label for="preference_spicy">4.相較於其他口味，我更喜歡辣味的食物：</label>
+		<font id="preference_spicy_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_spicy" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_spicy" type="radio" value="符合">符合</label>
+		<label><input name="preference_spicy" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_spicy" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_spicy" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_salty','preference_salty_check')">
+	<li>
+		<label for="preference_salty">5.相較於其他口味，我更喜歡比較鹹的食物：</label>
+		<font id="preference_salty_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_salty" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_salty" type="radio" value="符合">符合</label>
+		<label><input name="preference_salty" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_salty" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_salty" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_hot','preference_hot_check')">
+	<li>
+		<label for="preference_hot">6.相較於其他食物，我更喜歡比較燙的食物：</label>
+		<font id="preference_hot_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_hot" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_hot" type="radio" value="符合">符合</label>
+		<label><input name="preference_hot" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_hot" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_hot" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_full','preference_full_check')">
+	<li>
+		<label for="preference_full">7.我每餐只吃八分飽：</label>
+		<font id="preference_full_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_full" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_full" type="radio" value="符合">符合</label>
+		<label><input name="preference_full" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_full" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_full" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_choice','preference_choice_check')">
+	<li>
+		<label for="preference_choice">8.我吃飯通常只吃固定的幾種菜色：</label>
+		<font id="preference_choice_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_choice" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_choice" type="radio" value="符合">符合</label>
+		<label><input name="preference_choice" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_choice" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_choice" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_breakfast','preference_breakfast_check')">
+	<li>
+		<label for="preference_breakfast">9.我的早餐通常不規律，有時吃有時不吃：</label>
+		<font id="preference_breakfast_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_breakfast" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_breakfast" type="radio" value="符合">符合</label>
+		<label><input name="preference_breakfast" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_breakfast" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_breakfast" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_3meals_frequency','preference_3meals_frequency_check')">
+	<li>
+		<label for="preference_3meals_frequency">10.即使工作繁忙，我一定會保證一日三餐：</label>
+		<font id="preference_3meals_frequency_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_3meals_frequency" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_3meals_frequency" type="radio" value="符合">符合</label>
+		<label><input name="preference_3meals_frequency" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_3meals_frequency" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_3meals_frequency" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_3meals_time','preference_3meals_time_check')">
+	<li>
+		<label for="preference_3meals_time">11.我一日三餐的時間比較固定：</label>
+		<font id="preference_3meals_time_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_3meals_time" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_3meals_time" type="radio" value="符合">符合</label>
+		<label><input name="preference_3meals_time" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_3meals_time" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_3meals_time" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_snack','preference_snack_check')">
+	<li>
+		<label for="preference_snack">12.我基本不吃零食（不包括生果）：</label>
+		<font id="preference_snack_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_snack" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_snack" type="radio" value="符合">符合</label>
+		<label><input name="preference_snack" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_snack" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_snack" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_leftover','preference_leftover_check')">
+	<li>
+		<label for="preference_leftover">13.我基本不吃隔夜的剩菜剩飯：</label>
+		<font id="preference_leftover_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_leftover" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_leftover" type="radio" value="符合">符合</label>
+		<label><input name="preference_leftover" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_leftover" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_leftover" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_additional_nutrition','preference_additional_nutrition_check')">
+	<li>
+		<label for="preference_additional_nutrition">14.我經常吃維生素、鈣片等營養素補充劑：</label>
+		<font id="preference_additional_nutrition_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_additional_nutrition" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_additional_nutrition" type="radio" value="符合">符合</label>
+		<label><input name="preference_additional_nutrition" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_additional_nutrition" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_additional_nutrition" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_eat_out','preference_eat_out_check')">
+	<li>
+		<label for="preference_eat_out">15.我經常出街吃飯或買外賣：</label>
+		<font id="preference_eat_out_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_eat_out" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_eat_out" type="radio" value="符合">符合</label>
+		<label><input name="preference_eat_out" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_eat_out" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_eat_out" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_night_snack','preference_night_snack_check')">
+	<li>
+		<label for="preference_night_snack">16.我經常吃宵夜：</label>
+		<font id="preference_night_snack_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_night_snack" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_night_snack" type="radio" value="符合">符合</label>
+		<label><input name="preference_night_snack" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_night_snack" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_night_snack" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_mixed_food','preference_mixed_food_check')">
+	<li>
+		<label for="preference_mixed_food">17.我吃飯時候對不同食物的搭配：</label>
+		<font id="preference_mixed_food_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_mixed_food" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_mixed_food" type="radio" value="符合">符合</label>
+		<label><input name="preference_mixed_food" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_mixed_food" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_mixed_food" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_eating_speed','preference_eating_speed_check')">
+	<li>
+		<label for="preference_eating_speed">18.我吃飯速度很快：</label>
+		<font id="preference_eating_speed_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_eating_speed" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_eating_speed" type="radio" value="符合">符合</label>
+		<label><input name="preference_eating_speed" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_eating_speed" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_eating_speed" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_chew','preference_chew_check')">
+	<li>
+		<label for="preference_chew">19.我吃飯的時候，喜歡細嚼慢咽：</label>
+		<font id="preference_chew_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_chew" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_chew" type="radio" value="符合">符合</label>
+		<label><input name="preference_chew" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_chew" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_chew" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="info-item" onchange="checkRadio('preference_eat_read','preference_eat_read_check')">
+	<li>
+		<label for="preference_eat_read">20.我喜歡邊吃飯邊看電視或者報紙、書籍、手機：</label>
+		<font id="preference_eat_read_check" class="remain">*必須選擇</font><br>
+		<label><input name="preference_eat_read" type="radio" value="非常符合" checked>非常符合</label>
+		<label><input name="preference_eat_read" type="radio" value="符合">符合</label>
+		<label><input name="preference_eat_read" type="radio" value="不確定">不確定</label>
+		<label><input name="preference_eat_read" type="radio" value="不符合">不符合</label>
+		<label><input name="preference_eat_read" type="radio" value="很不符合">很不符合</label>
+	</li>
+</div>
+<div class="option-mainer">
+                <li></li>
+                <li><input class="option-bnt" type="submit" value="提交">
+                </li>
+            </div>
+</div>
+</div>
+</form>

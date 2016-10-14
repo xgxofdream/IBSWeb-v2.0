@@ -1,0 +1,44 @@
+<form method="post" name="health_info" action="" enctype="multipart/form-data">
+		<div class="project-title">腸易激綜合症亞型和中醫證型的分佈規律及菌群代謝研究</div>
+<div class="info-container">
+<div id="part1" class="part-container">
+
+<div class="info-item">
+	<li>
+		<label>基本资料</label>
+        <label><a href="index.php?survey&type=basic_info">您已经录入<?=$data['basic_info_completion'];?>信息，请继续/修改</a></label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label>健康资料</label>
+         <label><a href="index.php?survey&type=health_info">您已经录入<?=$data['health_info_completion']; ?>信息，请继续/修改</a></label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label>饮食资料</label>
+         <label><a href="index.php?survey&type=diet_info">您已经录入<?=$data['diet_info_completion']; ?>信息，请继续/修改</a></label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label>生活方式资料</label>
+         <label><a href="index.php?survey&type=lifestyle_info">您已经录入<?=$data['lifestyle_info_completion']; ?>信息，请继续/修改</a></label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label>IBS自评报告</label>
+         <label><a href="index.php?survey&type=self_estimation">您已经录入<?=$data['self_estimation_completion']; ?>信息，请继续/修改</a></label>
+	</li>
+</div>
+<div class="info-item">
+	<li>
+		<label>IBS中医师诊断报告</label>
+         <label><a href="index.php?index&purposeTo=report_physician_estimation">您的报告已完成<?=$data['physician_estimation_completion']; ?>，请查阅</a></label>
+	</li>
+</div>
+</div>
+</div>
+</form>

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<title>註冊</title>
+<link href="css/add.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="loginbox">
+  <form method="post" name="submitMessage" action="index.php?user&type=register" enctype="multipart/form-data">
+    
+    <div class="newregist">
+      註冊新用戶
+    </div>
+    <div>
+      <input class="registerfiled" type="text"  name="user_phone" id="user_phone" placeholder="用户：请输入手机号码" >
+    </div>
+        <div class="getmass">
+  <ul>
+
+  
+  </ul>
+  </div>
+    <div>
+      <input class="registerfiled" type="password"  name="user_pass" id="user_pass"  placeholder="登录密码">
+    </div>
+    <div>
+      <input class="registerfiled" type="password"  name="user_pass2" id="user_pass2"  placeholder="确认密码">
+    </div>
+     <div class="agree">
+      <ul> 
+        <li></li>
+        <li><p><span>注册身份: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input style="background-color:#3CF;" type="radio" name="user_type" value="0" checked >普通 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:#3CF;" type="radio" name="user_type" value="1" >研究者</span></p></li>
+        
+      </ul>
+    </div>
+    <div class="agree">
+      <ul> 
+        <li><input style="background-color:#3CF;" type="checkbox" name="radiobutton" value="radiobutton" checked ></li>
+        <li><p>我同意&nbsp;&nbsp;&nbsp;   <span>用戶協議</span></p></li>
+        <a class="tologin" href="javascript:window.location.href='index.php?user&type=login'">已有賬號？</a>
+      </ul>
+    </div>
+   
+    <div class="registerbutn"  onclick="codeJudge()">
+      註冊
+    </div>
+  </form>
+</div>
+</body>
+
+
+ <script language="javascript">
+ function codeJudge() {
+  //alertMessage('wait');
+   var user_phone = $('#user_phone').val();
+    var pass = $('#user_pass').val();
+   var pass2 = $('#user_pass2').val();
+   //var reg = /^1\d{10}$/;  //定义正则表达式
+  if(pass&&user_phone&&pass2){
+            if (pass==pass2) {
+
+                      document.submitMessage.submit();
+
+            }else
+            {
+
+                alert('两次输入密码不匹配'); 
+
+            } 
+       
+      }else
+       {
+
+          alert('请输入完整信息'); 
+       } 
+ }
+</script>
+
+
+
+</html>

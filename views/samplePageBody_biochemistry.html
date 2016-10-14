@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="css/samplePageUI.css" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/MainJS.js"></script>
+<script type="text/javascript" src="js/welcome.js"></script>
+<script type="text/javascript" src="js/sample.js"></script>
+<script type="text/javascript" src="js/input_control2.js"></script>
+
+<script src="js/DatePicker/WdatePicker.js"></script>
+
+
+<title>IBS Project</title>
+</head>
+
+<body>
+
+
+	<div class="toplist">
+
+		<div class="header-menu" style="margin-left: 26%">
+			<dt>
+				<a href="index.php?manage&type=sample_management">样本管理信息</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?manage&type=sample_profile">样本基本信息</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?manage&type=sample_biochemistry">样本生化数据</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?analyze&type=visulization">样本统计分析</a>
+			</dt>
+		</div>
+		<div class="user-panel">
+			<li class="one-menu" onmouseover="showSubMenu('mine_center');"
+				onmouseout="hideSubMenu('mine_center');">
+				<div>
+					<?=$data['user_tel'];?>
+					&nbsp;&nbsp;&nbsp;▼&nbsp;&nbsp;
+				</div>
+
+                <ul id="mine_center" class="sub-menu">
+	            	<a href="#"><li>修改密碼</li></a>
+	            	<a href="index.php?user&type=unlogin"><li>退出登錄</li></a>
+                    <a href="index.php?manage&type=sample_management"><li>管理界面</li></a>
+                    <a href="index.php"><li>网站首页</li></a>
+	            </ul>
+
+			</li>
+		</div>
+
+	</div>
+	<div class="toplist2">
+
+		<div class="header-menu" style="margin-left: 19%">
+			<dt>
+				<a href="index.php?manage&type=sample_management">样本管理信息</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?manage&type=sample_profile">样本基本信息</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?manage&type=sample_biochemistry">样本生化数据</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?analyze&type=visulization">样本统计分析</a>
+			</dt>
+		</div>
+		<div class="user-panel">
+			<li class="one-menu" onmouseover="showSubMenu('mine_center');"
+				onmouseout="hideSubMenu('mine_center');">
+				<div>
+					<?=$data['user_tel'];?>
+					&nbsp;&nbsp;&nbsp;▼&nbsp;&nbsp;
+				</div>
+
+                <ul id="mine_center" class="sub-menu">
+	            	<a href="#"><li>修改密碼</li></a>
+	            	<a href="index.php?user&type=unlogin"><li>退出登錄</li></a>
+                    <a href="index.php?manage&type=sample_management"><li>管理界面</li></a>
+                    <a href="index.php"><li>网站首页</li></a>
+	            </ul>
+
+			</li>
+		</div>
+
+	</div>
+
+<div class="top-temp">&nbsp;</div>  
+<form method="post" name="health_info" action="" enctype="multipart/form-data">
+<div class="body-container">
+ Opps, it is not finished yet.
+
+</div>
+</form>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/UI_Commom.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/MainJS.js"></script>
+
+<script type="text/javascript" src="js/welcome.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+
+<script src="js/slider.js"></script>	
+<script src="js/indexJS.js"></script> 
+
+<script src="js/common.js"></script>
+<script src="js/input_control2.js"></script>  
+
+
+<script src="js/DatePicker/WdatePicker.js"></script> 
+ 
+<title>IBS Project</title>
+</head>
+
+<body>
+<div class="toplist">
+       
+        <div class="header-site-focuse" style="margin-left:30%">
+            <dt><a href="index.php">首页</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">肠道健康</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">研究成果</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="http://cmcs.hkbu.edu.hk/" target="_blank">关于我们</a></dt>
+        </div>
+        <div class="top-list0">
+	        <li class="one-menu" onmouseover="showSubMenu('mine_center');" onmouseout="hideSubMenu('mine_center');">
+            	<div>個人中心&nbsp;&nbsp;&nbsp;▼&nbsp;&nbsp;</div>
+	            
+                <ul id="mine_center" class="sub-menu">
+	            	<a href="#"><li>修改密碼</li></a>
+	            	<a href="index.php?user&type=unlogin"><li>退出登錄</li></a>
+                    <a href="index.php?manage&type=sample_management"><li>管理界面</li></a>
+                    <a href="index.php"><li>网站首页</li></a>
+	            </ul>
+                
+	        </li>
+	        <li>|</li>
+            <li>欢迎您，<?=$data['user_tel'];?></li>
+         </div>  
+        
+    </div>
+<div class="toplist2">
+        
+        <div class="header-site-focuse" style="margin-left:30%">
+            <dt><a href="index.php">首页</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">肠道健康</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">研究成果</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="http://cmcs.hkbu.edu.hk/" target="_blank">关于我们</a></dt>
+        </div>
+        <div class="top-list0">
+	        <li class="one-menu" onmouseover="showSubMenu('mine_center2');" onmouseout="hideSubMenu('mine_center2');">
+            	<div>個人中心&nbsp;&nbsp;&nbsp;▼&nbsp;&nbsp;</div>
+	            
+                <ul id="mine_center" class="sub-menu">
+	            	<a href="#"><li>修改密碼</li></a>
+	            	<a href="index.php?user&type=unlogin"><li>退出登錄</li></a>
+                    <a href="index.php?manage&type=sample_management"><li>管理界面</li></a>
+                    <a href="index.php"><li>网站首页</li></a>
+	            </ul>
+                
+	        </li>
+	        <li>|</li>
+            <li>欢迎您，<?=$data['user_tel'];?></li>
+         </div>  
+        
+    </div>
+  	
+<div class="top-temp">&nbsp;</div>

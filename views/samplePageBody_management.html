@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="css/samplePageUI.css" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/MainJS.js"></script>
+<script type="text/javascript" src="js/welcome.js"></script>
+<script type="text/javascript" src="js/sample.js"></script>
+<script type="text/javascript" src="js/input_control2.js"></script>
+
+<script src="js/DatePicker/WdatePicker.js"></script>
+
+
+<title>IBS Project</title>
+</head>
+
+<body>
+
+
+	<div class="toplist">
+
+		<div class="header-menu" style="margin-left: 26%">
+			<dt>
+				<a href="index.php?manage&type=sample_management">样本管理信息</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?manage&type=sample_profile">样本基本信息</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?manage&type=sample_biochemistry">样本生化数据</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?analyze&type=visulization">样本统计分析</a>
+			</dt>
+		</div>
+		<div class="user-panel">
+			<li class="one-menu" onmouseover="showSubMenu('mine_center');"
+				onmouseout="hideSubMenu('mine_center');">
+				<div>
+					<?=$data['user_tel'];?>
+					&nbsp;&nbsp;&nbsp;▼&nbsp;&nbsp;
+				</div>
+
+                <ul id="mine_center" class="sub-menu">
+	            	<a href="#"><li>修改密碼</li></a>
+	            	<a href="index.php?user&type=unlogin"><li>退出登錄</li></a>
+                    <a href="index.php?manage&type=sample_management"><li>管理界面</li></a>
+                    <a href="index.php"><li>网站首页</li></a>
+	            </ul>
+
+			</li>
+		</div>
+
+	</div>
+	<div class="toplist2">
+
+		<div class="header-menu" style="margin-left: 19%">
+			<dt>
+				<a href="index.php?manage&type=sample_management">样本管理信息</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?manage&type=sample_profile">样本基本信息</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?manage&type=sample_biochemistry">样本生化数据</a>
+			</dt>
+		</div>
+		<div class="header-menu">
+			<dt>
+				<a href="index.php?analyze&type=visulization">样本统计分析</a>
+			</dt>
+		</div>
+		<div class="user-panel">
+			<li class="one-menu" onmouseover="showSubMenu('mine_center');"
+				onmouseout="hideSubMenu('mine_center');">
+				<div>
+					<?=$data['user_tel'];?>
+					&nbsp;&nbsp;&nbsp;▼&nbsp;&nbsp;
+				</div>
+
+                <ul id="mine_center" class="sub-menu">
+	            	<a href="#"><li>修改密碼</li></a>
+	            	<a href="index.php?user&type=unlogin"><li>退出登錄</li></a>
+                    <a href="index.php?manage&type=sample_management"><li>管理界面</li></a>
+                    <a href="index.php"><li>网站首页</li></a>
+	            </ul>
+
+			</li>
+		</div>
+
+	</div>
+	<div class="top-temp">&nbsp;</div>
+	<!-----以下：搜索功能区---->
+	<form method="post" name="search_managmentInfo"
+		action="index.php?manage&type=search_managmentInfo"
+		enctype="multipart/form-data">
+		<div class="menu-container">
+
+			<label class="menu-label">样本编号 <input name="sample_code"
+				type="text" placeholder="请输入样本编号"></label> <label
+				class="search-YorN">设为条件 <select name="firstAdd">
+					<option value="0">否</option>
+					<option value="1">是</option>
+			</select></label>
+
+		</div>
+		<div class="top-temp">&nbsp;</div>
+		<div class="menu-container">
+
+			<label class="menu-label">血液 <select name="user_blood_status">
+					<option value="0">未采集</option>
+					<option value="1">采集完成</option>
+			</select></label> <label class="menu-label">尿液 <select
+				name="user_urine_status">
+					<option value="0">未采集</option>
+					<option value="1">采集完成</option>
+			</select></label> <label class="menu-label">粪便 <select
+				name="user_feces_status">
+
+					<option value="0">未采集</option>
+					<option value="1">采集完成</option>
+			</select></label> <label class="search-YorN">设为条件 <select name="secondAdd">
+					<option value="0">否</option>
+					<option value="1">是</option>
+			</select></label>
+
+		</div>
+		<div class="top-temp">&nbsp;</div>
+		<div class="menu-container">
+			<label class="menu-label"><input class="search-range"
+				name="user_physician_estimation_status[]" type="text">%&lt;医师诊断完成量&lt;<input
+				class="search-range" name="user_physician_estimation_status[]"
+				type="text">%</label> <label class="menu-label"><input
+				class="search-range" name="user_self_estimation_status[]"
+				type="text">%&lt;自评表完成量&lt;<input class="search-range"
+				name="user_self_estimation_status[]" type="text">%</label> <label
+				class="menu-label"><input class="search-range"
+				name="user_basic_info_status[]" type="text">%&lt;基本信息表完成量&lt;<input
+				class="search-range" name="user_basic_info_status[]" type="text">%</label>
+			<label class="search-YorN">设为条件 <select name="thirdAdd">
+					<option value="0">否</option>
+					<option value="1">是</option>
+			</select></label>
+
+		</div>
+		<div class="menu-container">
+			<label class="menu-label"><input class="search-range"
+				name="user_health_info_status[]" type="text">%&lt;健康信息表完成量&lt;<input
+				class="search-range" name="user_health_info_status[]" type="text">%</label>
+			<label class="menu-label"><input class="search-range"
+				name="user_diet_info_status[]" type="text">%&lt;饮食信息表完成量&lt;<input
+				class="search-range" name="user_diet_info_status[]" type="text">%</label>
+			<label class="menu-label"><input class="search-range"
+				name="user_lifestyle_info_status[]" type="text">%&lt;生活方式信息表完成量&lt;<input
+				class="search-range" name="user_lifestyle_info_status[]" type="text">%</label>
+		</div>
+		<div class="menu-container">
+			<input class="search-bnt" type="submit" value="提交">
+		</div>
+	</form>
+	<!-----以上：搜索功能区---->
+	<div class="top-temp">&nbsp;</div>
+
+	<div class="body-container">
+		<table class="samplePage-table" id="samplePage">
+			<tbody>
+				<tr>
+					<td>姓名</td>
+					<td>性别</td>
+					<td>年龄</td>
+					<td>血液样本</td>
+					<td>尿液样本</td>
+					<td>粪便样本</td>
+					<td width="30%">医师</td>
+					<td>诊断报告</td>
+					<td>自评报告</td>
+					<td>基本资料</td>
+					<td>健康资料</td>
+					<td>饮食资料</td>
+					<td>生活方式资料</td>
+					<td>电话</td>
+					<td>db-ID</td>
+				</tr>
+
+				<?=$data['sampleInfo'];?>
+			</tbody>
+		</table>
+
+	</div>

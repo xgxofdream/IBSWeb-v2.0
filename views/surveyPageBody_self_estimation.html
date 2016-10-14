@@ -1,0 +1,1160 @@
+ <html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/UI_Commom.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/MainJS.js"></script>
+
+<script type="text/javascript" src="js/welcome.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+
+<script src="js/slider.js"></script>	
+<script src="js/indexJS.js"></script> 
+
+<script src="js/common.js"></script>
+<script src="js/input_control2.js"></script>  
+
+
+<script src="js/DatePicker/WdatePicker.js"></script> 
+ 
+<title>IBS Project</title>
+</head>
+
+<body>
+<div class="toplist">
+       
+        <div class="header-site-focuse" style="margin-left:30%">
+            <dt><a href="index.php">首页</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">肠道健康</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">研究成果</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="http://cmcs.hkbu.edu.hk/" target="_blank">关于我们</a></dt>
+        </div>
+        <div class="top-list0">
+	        <li class="one-menu" onmouseover="showSubMenu('mine_center');" onmouseout="hideSubMenu('mine_center');">
+            	<div>個人中心&nbsp;&nbsp;&nbsp;▼&nbsp;&nbsp;</div>
+	            
+                <ul id="mine_center" class="sub-menu">
+	            	<a href="#"><li>修改密碼</li></a>
+	            	<a href="index.php?user&type=unlogin"><li>退出登錄</li></a>
+                    <a href="index.php?manage&type=sample_management"><li>管理界面</li></a>
+                    <a href="index.php"><li>网站首页</li></a>
+	            </ul>
+                
+	        </li>
+	        <li>|</li>
+            <li>欢迎您，<?=$data['user_tel'];?></li>
+         </div>  
+        
+    </div>
+<div class="toplist2">
+        
+        <div class="header-site-focuse" style="margin-left:30%">
+            <dt><a href="index.php">首页</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">肠道健康</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="">研究成果</a></dt>
+        </div>
+        <div class="header-site">
+            <dt><a href="http://cmcs.hkbu.edu.hk/" target="_blank">关于我们</a></dt>
+        </div>
+        <div class="top-list0">
+	        <li class="one-menu" onmouseover="showSubMenu('mine_center2');" onmouseout="hideSubMenu('mine_center2');">
+            	<div>個人中心&nbsp;&nbsp;&nbsp;▼&nbsp;&nbsp;</div>
+	            
+                <ul id="mine_center" class="sub-menu">
+	            	<a href="#"><li>修改密碼</li></a>
+	            	<a href="index.php?user&type=unlogin"><li>退出登錄</li></a>
+                    <a href="index.php?manage&type=sample_management"><li>管理界面</li></a>
+                    <a href="index.php"><li>网站首页</li></a>
+	            </ul>
+                
+	        </li>
+	        <li>|</li>
+            <li>欢迎您，<?=$data['user_tel'];?></li>
+         </div>  
+        
+    </div>
+  	
+<div class="top-temp">&nbsp;</div><div class="project-title">腸易激綜合症亞型和中醫證型的分佈規律及菌群代謝研究<br>一般性資料調查表</div>
+<div class="menu-container">
+<label><a href="index.php?survey&type=basic_info">基本资料</label></a>
+<label><a href="index.php?survey&type=health_info">健康调查</label></a>
+<label><a href="index.php?survey&type=diet_info">饮食调查</label></a>
+<label><a href="index.php?survey&type=lifestyle_info">生活方式调查</label></a>
+<label><a href="index.php?survey&type=self_estimation">IBS自评估</label></a>
+</div>
+ <!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<form method="post" name="self_estimation" action="index.php?input&type=self_estimation"  enctype="multipart/form-data">
+<div class="info-container">
+  
+  <div id="part8" class="part-container">
+  <div class="info-part">腸易激綜合症一般資訊</div>
+<hr>
+<div class="info-item">
+	
+	<li>
+		<label for="illness_duration">1. 病程：</label><br>
+		<label><input name="illness_duration_year" type="number" value="" checked>年</label><input name="illness_duration_year_month" type="number" value="" checked>月</label>
+	</li>
+	<li>
+		<label for="initial_cause">2. 首次發作時的誘因：</label><br>
+        <label><input name="initial_cause[]" type="checkbox">無明顯誘因</label><br><br>
+        <label>飲食刺激，具體為:</label><input  name="initial_cause[]" style="width:100%;" type="text"><br>
+        <label>情緒變化，具體為:</label><input  name="initial_cause[]" style="width:100%;" type="text"><br>
+        <label>天氣變化，具體為:</label><input  name="initial_cause[]" style="width:100%;" type="text"><br>
+        <label>藥物使用，具體為:</label><input  name="initial_cause[]" style="width:100%;" type="text"><br>
+        <label>疾病，具體為:</label><input  name="initial_cause[]" style="width:100%;" type="text"><br>
+        <label>手術，具體為:</label><input  name="initial_cause[]" style="width:100%;" type="text"><br>
+        <label>虐待，具體為:</label><input  name="initial_cause[]" style="width:100%;" type="text"><br>
+        <label>其他，具體為:</label><input  name="initial_cause[]" style="width:100%;" type="text"><br>
+        <input name="initial_cause[]" type="hidden" value="from hidden input">
+        
+        
+	</li>
+    <li>
+		<label for="illness_time_YorN">3. 現時腹痛發作時有無特定的時間段</label><br>
+		<label><input name="illness_time_YorN" type="radio" value="0" checked>否</label><br>
+        <label><input name="illness_time_YorN" type="radio" value="1" >是</label><br>
+        <label>上午（6-12am）：</label><br>
+        <label><input name="illness_duration[]" type="checkbox" value="上午晨起時" >晨起時</label>
+        <label><input name="illness_duration[]" type="checkbox" value="上午早餐後" >早餐後</label>
+        <label><input name="illness_duration[]" type="checkbox" value="上午午餐前" >午餐前</label><br>
+        <label>下午（12am-6pm）：</label><br>
+        <label><input name="illness_duration[]" type="checkbox" value="下午午餐後" >午餐後</label>
+        <label><input name="illness_duration[]" type="checkbox" value="下午晚餐前" >晚餐前</label><br>
+        <label>夜間（6pm-0am）：</label><br>
+        <label><input name="illness_duration[]" type="checkbox" value="夜間晚餐後" >晚餐後</label>
+        <label><input name="illness_duration[]" type="checkbox" value="夜間臨睡前" >臨睡前</label><br>
+        <label><input name="illness_duration[]" type="checkbox" value="淩晨（0-6am）" >淩晨（0-6am）：</label><br>
+        <input name="illness_duration[]" type="hidden" value="from hidden input">
+       </li>
+</div>
+
+</div>
+  <div id="part8" class="part-container">
+    <div class="info-part">腸易激綜合症中醫相關症狀自評</div>
+    <hr>
+    <div class="info-item">
+      <li>
+        <label>1. 肝系症狀</label>
+        <br>
+        <label>胸脅脹痛</label>
+        <select name="CM_symptom_liver">
+          <option value="無">無</option>
+          <option value="偶爾脹痛，可自行緩解">偶爾脹痛，可自行緩解</option>
+          <option value="經常脹痛，每天時間少於2小時">經常脹痛，每天時間少於2小時</option>
+          <option value="持續脹痛，需服藥">持續脹痛，需服藥</option>
+        </select>
+        <br>
+        <label for="CM_symptom_mood">情緒抑鬱/煩躁易怒</label>
+        <select name="CM_symptom_mood" >
+          <option value="無">無</option>
+          <option value="偶有情緒抑鬱或急躁">偶有情緒抑鬱或急躁</option>
+          <option value="易發情緒低落或煩躁">易發情緒低落或煩躁</option>
+          <option value="經常發生且難以自我控制">經常發生且難以自我控制</option>
+        </select>
+      </li>
+      <li>
+        <label>2. 腎系症狀</label>
+        <br>
+        <label>腰膝酸軟</label>
+        <select name="CM_symptom_kidney">
+          <option value="無">無</option>
+          <option value="腰膝酸軟較輕">腰膝酸軟較輕</option>
+          <option value="腰膝酸軟時而作痛">腰膝酸軟時而作痛</option>
+          <option value="腰膝酸軟經常作痛">腰膝酸軟經常作痛</option>
+        </select>
+        <br>
+        <label>畏寒肢冷</label>
+        <select name="CM_symptom_temp">
+          <option value="無">無</option>
+          <option value="輕度畏寒">輕度畏寒</option>
+          <option value="中度畏寒，四肢發冷">中度畏寒，四肢發冷</option>
+          <option value="重度畏寒，全身發冷">重度畏寒，全身發冷</option>
+        </select>
+        <br>
+        <label>夜尿頻多</label>
+        <select name="CM_symptom_urine" id="select_k1">
+          <option value="無">無</option>
+          <option value="夜尿2次">夜尿2次</option>
+          <option value="夜尿3次">夜尿3次</option>
+          <option value="夜尿4次或以上">夜尿4次或以上</option>
+        </select>
+        <br>
+        <label>少腹牽引不適</label>
+        <select name="CM_symptom_ab">
+          <option value="無">無</option>
+          <option value="偶有">偶有</option>
+          <option value="經常">經常</option>
+          <option value="持續出現">持續出現</option>
+        </select>
+      </li>
+      <li>
+        <label>3. 脾系症狀</label>
+        <br>
+        <label>口腔黏膩感</label>
+        <select name="CM_symptom_spleen">
+          <option value="無">無</option>
+          <option value="偶爾">偶爾</option>
+          <option value="時常覺得口中黏膩">時常覺得口中黏膩</option>
+          <option value="持續口中黏膩">持續口中黏膩</option>
+        </select>
+        <br>
+        <label>口乾口苦</label>
+        <select name="CM_symptom_mouth">
+          <option value="無">無</option>
+          <option value="偶有口乾，但不欲飲水">偶有口乾，但不欲飲水</option>
+          <option value="時有口乾口苦，飲水後緩解">時有口乾口苦，飲水後緩解</option>
+          <option value="整日口乾口苦，飲水無法緩解">整日口乾口苦，飲水無法緩解</option>
+        </select>
+        <br>
+        <label>噯氣 (胃氣)</label>
+        <select name="CM_symptom_belching">
+          <option value="無">無</option>
+          <option value="每日小于4次">每日小于4次</option>
+          <option value="每日4-10次">每日4-10次</option>
+          <option value="每日多于10次">每日多于10次</option>
+        </select>
+        <br>
+        <label>食慾</label>
+        <select name="CM_symptom_appetite">
+          <option value="無改變">無改變</option>
+          <option value="食慾下降，但保持原飯量">食慾下降，但保持原飯量</option>
+          <option value="食慾下降，飯量減少1/3">食慾下降，飯量減少1/3</option>
+          <option value="飯量減少2/3以上">飯量減少2/3以上</option>
+        </select>
+        <br>
+        <label>疲勞</label>
+        <select name="CM_symptom_fatigue">
+          <option value="無">無</option>
+          <option value="精神不振，不喜多言">精神不振，不喜多言</option>
+          <option value="精神疲乏，懶言少語">精神疲乏，懶言少語</option>
+          <option value="精神極度疲乏，不說語">精神極度疲乏，不說語</option>
+        </select>
+        <br>
+        <label>胃腸脹滿不適</label>
+        <select name="CM_symptom_bloating">
+          <option value="無">無</option>
+          <option value="食後脹滿不適，半小時內緩解">食後脹滿不適，半小時內緩解</option>
+          <option value="食後脹滿不適，2小時內緩解">食後脹滿不適，2小時內緩解</option>
+          <option value="持續脹滿不適">持續脹滿不適</option>
+        </select>
+        <br>
+        <label>身體困重</label>
+        <select name="CM_symptom_sleep">
+          <option value="無">無</option>
+          <option value="稍覺困重，不影響活動">稍覺困重，不影響活動</option>
+          <option value="困重較明顯，活動減少">困重較明顯，活動減少</option>
+          <option value="困重明顯，不欲活">困重明顯，不欲活動</option>
+        </select>
+        <br>
+        <label>乏力</label>
+        <select name="CM_symptom_motion">
+          <option value="無">無</option>
+          <option value="稍覺乏力，可堅持體力勞動">稍覺乏力，可堅持體力勞動</option>
+          <option value="倦怠較甚，勉強日常活動">倦怠較甚，勉強日常活動</option>
+          <option value="四肢無力，不能堅持日常活動">四肢無力，不能堅持日常活動</option>
+        </select>
+      </li>
+      <li>
+        <label>5. 症狀發作時，您是否同時伴有以下心理症狀？（請圈出符合您實際的選項）</label>
+        <br>
+        <label>
+          <input name="mood_state" type="radio" value="憤怒" checked>
+          憤怒</label>
+        <label>
+          <input name="mood_state" type="radio" value="焦慮" >
+          焦慮</label>
+        <label>
+          <input name="mood_state" type="radio" value="抑鬱" >
+          抑鬱</label>
+        <label>
+          <input name="mood_state" type="radio" value="緊張" >
+          緊張</label>
+        <label>
+          <input name="mood_state" type="radio" value="疲勞" >
+          疲勞</label>
+        <label>
+          <input name="mood_state" type="radio" value="瞌睡" >
+          瞌睡</label>
+        <br>
+      </li>
+      <li>
+        <label>6. 症狀發作時，您是否同時伴有以下軀體症狀？（請圈出符合您實際的選項）</label>
+        <br>
+        <label>
+          <input name="physical_state" type="radio" value="背痛" checked>
+          背痛</label>
+        <label>
+          <input name="physical_state" type="radio" value="頭痛" >
+          頭痛</label>
+        <label>
+          <input name="physical_state" type="radio" value="關節疼痛" >
+          關節疼痛</label>
+        <label>
+          <input name="physical_state" type="radio" value="肌肉疼痛">
+          肌肉疼痛</label>
+        <br>
+      </li>
+    </div>
+  </div>
+  <div id="part8" class="part-container">
+  <div class="info-part">腸易激綜合症症狀嚴重程度評分 (IBS-SSS)</div>
+<hr>
+<div class="info-item">
+	<li>
+		<label for="exercise_intensity">1. 您現在是否被腹痛所困擾</label><br>
+		<label><input name="ab_pain_YorN" type="radio" value="0" checked>否</label><br>
+        <label><input name="ab_pain_YorN" type="radio" value="1" >是</label><br>
+        <label>若是，腹痛的嚴重程度如何</label><br>
+        <label><input name="ab_pain_level" type="radio" value="25" checked>輕微</label>
+        <label><input name="ab_pain_level" type="radio" value="50" >一般</label>
+        <label><input name="ab_pain_level" type="radio" value="75" >嚴重</label>
+        <label><input name="ab_pain_level" type="radio" value="100" >非常嚴重</label><br>
+     </li>
+     <li>
+        <label>2. 平均每十天您會有幾出現腹痛：</label><br>
+        <label><input name="ab_pain_day" type="number" value="" placeholder="天数"></label>
+       </li>
+       <li>
+		<label>3. 您現在是否被腹脹所困擾（腹脹、氣或部緊張）
+（* 女性應區別於經期的腹脹）</label><br>
+		<label><input name="ab_bloating_YorN" type="radio" value="0" checked>否</label><br>
+        <label><input name="ab_bloating_YorN" type="radio" value="1" >是</label><br>
+        <label>若是，腹痛的嚴重程度如何</label><br>
+        <label><input name="ab_bloating_level" type="radio" value="25" checked>輕微</label>
+        <label><input name="ab_bloating_level" type="radio" value="50" >一般</label>
+        <label><input name="ab_bloating_level" type="radio" value="75" >嚴重</label>
+        <label><input name="ab_bloating_level" type="radio" value="100" >非常嚴重</label><br>
+     </li>
+     <li>
+        <label>4. 您對自己的排便習慣滿意程度如何：</label><br>
+        <label><input name="defecation_satisfactory" type="radio" value="0" checked>很滿意</label>
+        <label><input name="defecation_satisfactory" type="radio" value="33" >滿意</label>
+        <label><input name="defecation_satisfactory" type="radio" value="66" >不滿意</label>
+        <label><input name="defecation_satisfactory" type="radio" value="100" >非常不滿意</label><br>
+       </li>
+       <li>
+        <label>5. IBS對您日常生活的影響程度如何：</label><br>
+        <label><input name="IBS_effect_level" type="radio" value="0" checked>无影響</label>
+        <label><input name="IBS_effect_level" type="radio" value="33" >影響不大</label>
+        <label><input name="IBS_effect_level" type="radio" value="66" >影響很大</label>
+        <label><input name="IBS_effect_level" type="radio" value="100" >無法正常生活</label><br>
+       </li>
+</div>
+
+</div>
+<div id="part8" class="part-container">
+  <div class="info-part">大便性狀評分（BristolBristol BristolBristol 評分及IBS-DSQ 問卷）</div>
+<hr>
+<div class="info-item">
+	<li>
+		<label for="exercise_intensity">1. 請圈出符合您排便實際的選項</label><br>
+        <label>請圈出符合的大便形狀</label>
+		<select name="defecation_shape" id="select_k1">
+    		<option value="種類1：乾硬便、成粒狀">種類1：乾硬便、成粒狀</option>
+			<option value="種類2：乾硬便、成條狀">種類2：乾硬便、成條狀</option>
+			<option value="種類3：條狀大便、表面不平、稍乾">種類3：條狀大便、表面不平、稍乾</option>
+            <option value="種類4：條狀軟便、表面平滑">種類4：條狀軟便、表面平滑</option>
+            <option value="種類5：細軟便、偏爛">種類5：細軟便、偏爛</option>
+            <option value="種類6：大便稀爛、不成形">種類6：大便稀爛、不成形</option>
+            <option value="種類7：水樣便">種類7：水樣便</option>
+    	</select><br>
+   		<label>符合您排便實際的選項</label>
+		<select name="defecation_level">
+    		<option value="等級1：排便極度費力，需用手法協助排便">等級1：排便極度費力，需用手法協助排便</option>
+			<option value="等級2：需靠藥品(內服或外用)幫助排便">等級2：需靠藥品(內服或外用)幫助排便</option>
+			<option value="等級3：排便費力">等級3：排便費力</option>
+            <option value="等級4：排便容易，不費力">等級4：排便容易，不費力</option>
+            <option value="等級5：大便急迫，無腹痛腹部不適">等級5：大便急迫，無腹痛腹部不適</option>
+            <option value="等級6：大便急迫，伴腹痛或腹部絞痛">等級6：大便急迫，伴腹痛或腹部絞痛</option>
+            <option value="等級7：大便失禁">等級7：大便失禁</option>
+    	</select>
+                
+     </li>
+     <li>
+        <label>2. 平均每天排便次數：</label>
+        <label><input name="defecation_frequency" type="number" value="" placeholder="次数"></label><br>
+       	<label for="exercise_intensity">您自覺腹瀉嚴重程度如何</label>
+        	<select name="diarrhea_level">
+                <option value="0：无">0：无</option>
+                <option value="1：輕微">1：輕微</option>
+                <option value="2：一般">2：一般</option>
+                <option value="3：嚴重">3：嚴重</option>
+                <option value="4：非常嚴重">4：非常嚴重</option>
+         	</select><br>
+        <label>您自覺便秘嚴重程度如何</label>
+        	<select name="constipation_level" >
+                <option value="0：无">0：无</option>
+                <option value="1：輕微">1：輕微</option>
+                <option value="2：一般">2：一般</option>
+                <option value="3：嚴重">3：嚴重</option>
+                <option value="4：非常嚴重">4：非常嚴重</option>
+            </select>
+		</li>
+     <li>
+        <label>3. 在過去10天內，您自覺排便急迫數占幾：</label>
+        <label><input name="rushed_defecation_frequency" type="number" value="" placeholder="次数"></label><br>
+       	<label>排便急迫感的嚴重程度如何</label>
+        	<select name="rushed_defecation_level">
+                <option value="0：无">0：无</option>
+                <option value="1：輕微">1：輕微</option>
+                <option value="2：一般">2：一般</option>
+                <option value="3：嚴重">3：嚴重</option>
+                <option value="4：非常嚴重">4：非常嚴重</option>
+         	</select><br>
+      </li>
+      <li>
+        <label>4. 症狀發作時，您是否同時伴有以下症狀？嚴重程度如何</label><br>
+        <label>腹痛</label>
+        	<select name="symptom_ab_pain" >
+                <option value="0：无">0：无</option>
+                <option value="1：輕微">1：輕微</option>
+                <option value="2：一般">2：一般</option>
+                <option value="3：嚴重">3：嚴重</option>
+                <option value="4：非常嚴重">4：非常嚴重</option>
+         	</select><br>
+        <label>自覺腹脹</label>
+        	<select name="symptom_bloating01" >
+                <option value="0：无">0：无</option>
+                <option value="1：輕微">1：輕微</option>
+                <option value="2：一般">2：一般</option>
+                <option value="3：嚴重">3：嚴重</option>
+                <option value="4：非常嚴重">4：非常嚴重</option>
+            </select><br>
+        <label >腹部脹大</label>
+        	<select name="symptom_bloating02" >
+                <option value="0：无">0：无</option>
+                <option value="1：輕微">1：輕微</option>
+                <option value="2：一般">2：一般</option>
+                <option value="3：嚴重">3：嚴重</option>
+                <option value="4：非常嚴重">4：非常嚴重</option>
+            </select><br>
+        <label >排氣/矢氣</label>
+        	<select name="symptom_passing_gas">
+                <option value="0：无">0：无</option>
+                <option value="1：輕微">1：輕微</option>
+                <option value="2：一般">2：一般</option>
+                <option value="3：嚴重">3：嚴重</option>
+                <option value="4：非常嚴重">4：非常嚴重</option>
+            </select>
+		</li>
+     <li>
+        <label>5. 症狀發作時，您是否同時伴有以下心理症狀？（請圈出符合您實際的選項）</label><br>
+            <label>
+          <input name="symptom_mood_state" type="radio" value="憤怒" checked>
+          憤怒</label>
+        <label>
+          <input name="symptom_mood_state" type="radio" value="焦慮" >
+          焦慮</label>
+        <label>
+          <input name="symptom_mood_state" type="radio" value="抑鬱" >
+          抑鬱</label>
+        <label>
+          <input name="symptom_mood_state" type="radio" value="緊張" >
+          緊張</label>
+        <label>
+          <input name="symptom_mood_state" type="radio" value="疲勞" >
+          疲勞</label>
+        <label>
+          <input name="symptom_mood_state" type="radio" value="瞌睡" >
+          瞌睡</label><br>
+       </li>
+       <li>
+        <label>6. 症狀發作時，您是否同時伴有以下軀體症狀？（請圈出符合您實際的選項）</label><br>
+        <label><input name="symptom_body_state" type="radio" value="背痛" checked>背痛</label>
+        <label><input name="symptom_body_state" type="radio" value="頭痛" >頭痛</label>
+        <label><input name="symptom_body_state" type="radio" value="關節疼痛" >關節疼痛</label>
+        <label><input name="symptom_body_state" type="radio" value="肌肉疼痛" >肌肉疼痛</label><br>
+       </li>
+</div>
+
+</div>
+<div id="part8" class="part-container">
+  <div class="info-part">腸易激綜合症生活質素問卷</div>
+<hr>
+<div class="info-item">
+	
+	<li>
+		<label for="exercise_frequency">請圈出最適合的分數（1：無症狀；2：輕微；3：中等；4嚴重；5：非常嚴重）</label><br>
+		<table border="1">
+  <tbody>
+    <tr>
+      <td><label>項目</label></td>
+      <td><label>1</label></td>
+      <td><label>2</label></td>
+      <td><label>3</label></td>
+      <td><label>4</label></td>
+      <td><label>5</label></td>
+    </tr>
+    <tr>
+      <td><label>1. 因為我的腸胃問題，我感到無助</label></td>
+      
+      <td><input name="IBS_lifequality_item01" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item01" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item01" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item01" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item01" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>2. 因為我的腸胃問題導致的氣味，我感到尷尬</label></td>
+      
+      <td><input name="IBS_lifequality_item02" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item02" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item02" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item02" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item02" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>3. 因為時常如廁而浪費時間，我感到困擾</label></td>
+      
+      <td><input name="IBS_lifequality_item03" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item03" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item03" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item03" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item03" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>4. 我覺得我的腸胃問題是身體虛弱的象徵，表示我容易患上其他疾病</label></td>
+      
+      <td><input name="IBS_lifequality_item04" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item04" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item04" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item04" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item04" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>5. 因為我的腸胃問題，我感到肥胖</label></td>
+      
+      <td><input name="IBS_lifequality_item05" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item05" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item05" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item05" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item05" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>6. 因為我的腸胃問題，我覺得我的生活失去控制</label></td>
+      
+      <td><input name="IBS_lifequality_item06" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item06" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item06" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item06" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item06" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>7. 因為我的腸胃問題，我覺得我的生活減少樂趣</label></td>
+      
+      <td><input name="IBS_lifequality_item07" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item07" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item07" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item07" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item07" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>8. 當我談及我的腸胃問題，我感到不安</label></td>
+      <td><input name="IBS_lifequality_item08" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item08" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item08" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item08" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item08" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>9. 因為我的腸胃問題，我感到沮喪</label></td>
+      <td><input name="IBS_lifequality_item09" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item09" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item09" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item09" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item09" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>10. 因為我的腸胃問題，我感到孤立</label></td>
+      <td><input name="IBS_lifequality_item10" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item10" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item10" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item10" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item10" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>11. 因為我的腸胃問題，我需要特別注意食量</label></td>
+      <td><input name="IBS_lifequality_item11" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item11" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item11" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item11" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item11" type="radio" value="5" >5</td>
+     </tr>  
+     <tr>
+      <td><label>12. 因為我的腸胃問題，我的性生活並不如意</label></td>
+      <td><input name="IBS_lifequality_item12" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item12" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item12" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item12" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item12" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>13. 因為我的腸胃問題，我感到憤怒</label></td>
+      <td><input name="IBS_lifequality_item13" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item13" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item13" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item13" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item13" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>14. 因為我的腸胃問題，我感到好像使別人煩惱</label></td>
+      <td><input name="IBS_lifequality_item14" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item14" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item14" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item14" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item14" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>15. 我擔心我的腸胃問題會惡化</label></td>
+      <td><input name="IBS_lifequality_item15" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item15" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item15" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item15" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item15" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>16. 因為我的腸胃問題，我感到很煩惱</label></td>
+      <td><input name="IBS_lifequality_item16" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item16" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item16" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item16" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item16" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>17. 我擔心別人認為我誇大了我的腸胃問題</label></td>
+      <td><input name="IBS_lifequality_item17" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item17" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item17" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item17" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item17" type="radio" value="5" >5</td>
+     </tr>   
+     <tr>
+      <td><label>18. 因為我的腸胃問題，我的工作能力減低</label></td>
+      <td><input name="IBS_lifequality_item18" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item18" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item18" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item18" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item18" type="radio" value="5" >5</td>
+     </tr>
+          <tr>
+      <td><label>19. 因為我的腸胃問題，我需要避免緊張或承受壓力</label></td>
+      <td><input name="IBS_lifequality_item19" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item19" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item19" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item19" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item19" type="radio" value="5" >5</td>
+     </tr>
+          <tr>
+      <td><label>20. 我的腸胃問題令我減低了性慾</label></td>
+      <td><input name="IBS_lifequality_item20" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item20" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item20" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item20" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item20" type="radio" value="5" >5</td>
+     </tr>
+          <tr>
+      <td><label>21. 我的腸胃問題限制了我的衣著</label></td>
+      <td><input name="IBS_lifequality_item21" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item21" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item21" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item21" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item21" type="radio" value="5" >5</td>
+     </tr>
+          <tr>
+      <td><label>22. 因為我的腸胃問題，我需要避免費力、粗重的活動</label></td>
+      <td><input name="IBS_lifequality_item22" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item22" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item22" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item22" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item22" type="radio" value="5" >5</td>
+     </tr>
+          <tr>
+      <td><label>23. 因為我的腸胃問題，我需要注意食物的種類</label></td>
+      <td><input name="IBS_lifequality_item23" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item23" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item23" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item23" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item23" type="radio" value="5" >5</td>
+     </tr>
+          <tr>
+      <td><label>24. 因為我的腸胃問題，我與不熟識的人相處有困難</label></td>
+      <td><input name="IBS_lifequality_item24" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item24" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item24" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item24" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item24" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>25. 因為我的腸胃問題，我感覺沒精打采</label></td>
+      <td><input name="IBS_lifequality_item25" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item25" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item25" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item25" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item25" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>26. 因為我的腸胃問題，我覺得不潔淨</label></td>
+      <td><input name="IBS_lifequality_item26" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item26" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item26" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item26" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item26" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>27. 當我想進食的時候，因我的腸胃問題而不能進食，我感我很沮喪</label></td>
+      <td><input name="IBS_lifequality_item27" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item27" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item27" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item27" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item27" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>28. 因為我的腸胃問題，鄰近洗手間是很重要的</label></td>
+      <td><input name="IBS_lifequality_item28" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item28" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item28" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item28" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item28" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>29. 我的腸胃問題是我生活的中心</label></td>
+      <td><input name="IBS_lifequality_item29" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item29" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item29" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item29" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item29" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>30. 我擔心我的排便失去控制</label></td>
+      <td><input name="IBS_lifequality_item30" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item30" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item30" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item30" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item30" type="radio" value="5" >5</td>
+     </tr>
+      <tr>
+      <td><label>31. 我懼怕我不能排便</label></td>
+      <td><input name="IBS_lifequality_item31" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item31" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item31" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item31" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item31" type="radio" value="5" >5</td>
+     </tr>
+      <tr>
+      <td><label>32. 我的腸胃問題會影響我和至親的關係</label></td>
+      <td><input name="IBS_lifequality_item32" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item32" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item32" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item32" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item32" type="radio" value="5" >5</td>
+     </tr>
+     <tr>
+      <td><label>33. 我感到無人明白我的腸胃問題</label></td>
+      <td><input name="IBS_lifequality_item33" type="radio" value="1" checked >1</td>
+      <td><input name="IBS_lifequality_item33" type="radio" value="2" >2</td>
+      <td><input name="IBS_lifequality_item33" type="radio" value="3" >3</td>
+      <td><input name="IBS_lifequality_item33" type="radio" value="4" >4</td>
+      <td><input name="IBS_lifequality_item33" type="radio" value="5" >5</td>
+     </tr>
+     
+    </tbody>
+</table>
+
+	</li>
+    
+	</div>
+</div>
+<div id="part8" class="part-container">
+  <div class="info-part">焦慮自評量表（SAS量表）</div>
+<hr>
+<div class="info-item">
+	
+	<li>
+		<label for="exercise_frequency">請根據您近一周的感覺來進行評分，數位的順序依次為從無、有時、經常、持續</label><br>
+		<table border="1">
+  <tbody>
+    <tr>
+      <td><label>症狀</label></td>
+      
+      <td><label>幾乎沒有</label></td>
+      <td><label>有時</label></td>
+      <td><label>經常</label></td>
+      <td><label>持續</label></td>
+    </tr>
+    <tr>
+      <td><label>1. 我覺得比平時容易緊張或著急 </label></td>
+      
+      <td><input name="SAS_item01" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item01" type="radio" value="2" >2</td>
+      <td><input name="SAS_item01" type="radio" value="3" >3</td>
+      <td><input name="SAS_item01" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>2. 我無緣無故在感到害怕</label></td>
+      
+      <td><input name="SAS_item02" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item02" type="radio" value="2" >2</td>
+      <td><input name="SAS_item02" type="radio" value="3" >3</td>
+      <td><input name="SAS_item02" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>3. 我容易心裡煩亂或感到驚恐</label></td>
+      
+      <td><input name="SAS_item03" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item03" type="radio" value="2" >2</td>
+      <td><input name="SAS_item03" type="radio" value="3" >3</td>
+      <td><input name="SAS_item03" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>4. 我覺得我可能將要發瘋</label></td>
+      
+      <td><input name="SAS_item04" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item04" type="radio" value="2" >2</td>
+      <td><input name="SAS_item04" type="radio" value="3" >3</td>
+      <td><input name="SAS_item04" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>5. 我覺得一切都很好</label></td>
+      <td><input name="SAS_item05" type="radio" value="4" >4</td>
+      <td><input name="SAS_item05" type="radio" value="3" >3</td>
+      <td><input name="SAS_item05" type="radio" value="2" >2</td>
+      <td><input name="SAS_item05" type="radio" value="1" checked >1</td>
+      
+      
+      
+     </tr>
+     <tr>
+      <td><label>6. 我手腳發抖打顫</label></td>
+      
+      <td><input name="SAS_item06" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item06" type="radio" value="2" >2</td>
+      <td><input name="SAS_item06" type="radio" value="3" >3</td>
+      <td><input name="SAS_item06" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>7. 我因為頭疼、頸痛和背痛而苦惱</label></td>
+      
+      <td><input name="SAS_item07" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item07" type="radio" value="2" >2</td>
+      <td><input name="SAS_item07" type="radio" value="3" >3</td>
+      <td><input name="SAS_item07" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>8. 我覺得容易衰弱和疲乏</label></td>
+      
+      <td><input name="SAS_item08" type="radio" value="1" checked checked >1</td>
+      <td><input name="SAS_item08" type="radio" value="2" >2</td>
+      <td><input name="SAS_item08" type="radio" value="3" >3</td>
+      <td><input name="SAS_item08" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>9. 我覺得心平氣和，並且容易安靜坐著</label></td>
+      
+      <td><input name="SAS_item09" type="radio" value="4" >4</td>
+      <td><input name="SAS_item09" type="radio" value="3" >3</td>
+      <td><input name="SAS_item09" type="radio" value="2" >2</td>
+      <td><input name="SAS_item09" type="radio" value="1" checked >1</td>
+     </tr>
+     <tr>
+      <td><label>10. 我覺得心跳得很快</label></td>
+      
+      <td><input name="SAS_item10" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item10" type="radio" value="2" >2</td>
+      <td><input name="SAS_item10" type="radio" value="3" >3</td>
+      <td><input name="SAS_item10" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>11. 我因為一陣陣頭暈而苦惱</label></td>
+      
+      <td><input name="SAS_item11" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item11" type="radio" value="2" >2</td>
+      <td><input name="SAS_item11" type="radio" value="3" >3</td>
+      <td><input name="SAS_item11" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>12. 我有暈倒發作，或覺得要暈倒似的</label></td>
+      
+      <td><input name="SAS_item12" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item12" type="radio" value="2" >2</td>
+      <td><input name="SAS_item12" type="radio" value="3" >3</td>
+      <td><input name="SAS_item12" type="radio" value="4" >4</td>
+     </tr>
+      <tr>
+      <td><label>13. 我吸氣呼氣都感到很容易</label></td>
+      
+      <td><input name="SAS_item13" type="radio" value="4" >4</td>
+      <td><input name="SAS_item13" type="radio" value="3" >3</td>
+      <td><input name="SAS_item13" type="radio" value="2" >2</td>
+      <td><input name="SAS_item13" type="radio" value="1" checked >1</td>
+     </tr>
+      <tr>
+      <td><label>14. 我的手腳麻木和刺痛</label></td>
+      
+      <td><input name="SAS_item14" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item14" type="radio" value="2" >2</td>
+      <td><input name="SAS_item14" type="radio" value="3" >3</td>
+      <td><input name="SAS_item14" type="radio" value="4" >4</td>
+     </tr>
+      <tr>
+      <td><label>15. 我因為胃痛和消化不良而苦惱</label></td>
+      
+      <td><input name="SAS_item15" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item15" type="radio" value="2" >2</td>
+      <td><input name="SAS_item15" type="radio" value="3" >3</td>
+      <td><input name="SAS_item15" type="radio" value="4" >4</td>
+     </tr>
+      <tr>
+      <td><label>16. 我常常要小便</label></td>
+      
+      <td><input name="SAS_item16" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item16" type="radio" value="2" >2</td>
+      <td><input name="SAS_item16" type="radio" value="3" >3</td>
+      <td><input name="SAS_item16" type="radio" value="4" >4</td>
+     </tr>
+      <tr>
+      <td><label>17. 我的手腳常常是乾燥溫暖的</label></td>
+      
+      <td><input name="SAS_item17" type="radio" value="4" >4</td>
+      <td><input name="SAS_item17" type="radio" value="3" >3</td>
+      <td><input name="SAS_item17" type="radio" value="2" >2</td>
+      <td><input name="SAS_item17" type="radio" value="1" checked >1</td>
+     </tr>
+      <tr>
+      <td><label>18. 我臉紅發熱</label></td>
+      
+      <td><input name="SAS_item18" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item18" type="radio" value="2" >2</td>
+      <td><input name="SAS_item18" type="radio" value="3" >3</td>
+      <td><input name="SAS_item18" type="radio" value="4" >4</td>
+     </tr>
+      <tr>
+      <td><label>19. 我容易入睡並且一夜睡得很好</label></td>
+      
+      <td><input name="SAS_item19" type="radio" value="4" >4</td>
+      <td><input name="SAS_item19" type="radio" value="3" >3</td>
+      <td><input name="SAS_item19" type="radio" value="2" >2</td>
+      <td><input name="SAS_item19" type="radio" value="1" checked >1</td>
+     </tr>
+      <tr>
+      <td><label>20. 我作惡夢</label></td>
+      
+      <td><input name="SAS_item20" type="radio" value="1" checked >1</td>
+      <td><input name="SAS_item20" type="radio" value="2" >2</td>
+      <td><input name="SAS_item20" type="radio" value="3" >3</td>
+      <td><input name="SAS_item20" type="radio" value="4" >4</td>
+     </tr>
+    
+    </tbody>
+</table>
+
+	</li>
+    
+	</div>
+</div>
+<div id="part8" class="part-container">
+  <div class="info-part">抑鬱自評量表（SDS量表）</div>
+<hr>
+<div class="info-item">
+	
+	<li>
+		<label for="exercise_frequency">請根據您近一周的感覺來進行評分，數位的順序依次為從無、有時、經常、持續</label><br>
+		<table border="1">
+  <tbody>
+    <tr>
+      <td><label>症狀</label></td>
+      
+      <td><label>幾乎沒有</label></td>
+      <td><label>有時</label></td>
+      <td><label>經常</label></td>
+      <td><label>持續</label></td>
+    </tr>
+    <tr>
+      <td><label>1. 我感到情緒沮喪，鬱悶</label></td>
+      
+      <td><input name="SDS_item01" type="radio" value="1" checked >1</td>
+      <td><input name="SDS_item01" type="radio" value="2" >2</td>
+      <td><input name="SDS_item01" type="radio" value="3" >3</td>
+      <td><input name="SDS_item01" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>2. 我感到早晨心情最好</label></td>
+      
+       <td><input name="SDS_item02" type="radio" value="4" >4</td>
+      <td><input name="SDS_item02" type="radio" value="3" >3</td>
+      <td><input name="SDS_item02" type="radio" value="2" >2</td>
+      <td><input name="SDS_item02" type="radio" value="1" checked >1</td>
+     </tr>
+     <tr>
+      <td><label>3. 我要哭或想哭</label></td>
+      
+      <td><input name="SDS_item03" type="radio" value="1" checked >1</td>
+      <td><input name="SDS_item03" type="radio" value="2" >2</td>
+      <td><input name="SDS_item03" type="radio" value="3" >3</td>
+      <td><input name="SDS_item03" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>4. 我夜間睡眠不好</label></td>
+      
+      <td><input name="SDS_item04" type="radio" value="1" checked >1</td>
+      <td><input name="SDS_item04" type="radio" value="2" >2</td>
+      <td><input name="SDS_item04" type="radio" value="3" >3</td>
+      <td><input name="SDS_item04" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>5. 我吃飯像平時一樣多</label></td>
+      <td><input name="SDS_item05" type="radio" value="4" >4</td>
+      <td><input name="SDS_item05" type="radio" value="3" >3</td>
+      <td><input name="SDS_item05" type="radio" value="2" >2</td>
+      <td><input name="SDS_item05" type="radio" value="1" checked >1</td>
+      
+      
+      
+     </tr>
+     <tr>
+      <td><label>6. 我仍對性生活感到滿意</label></td>
+      
+       <td><input name="SDS_item06" type="radio" value="4" >4</td>
+      <td><input name="SDS_item06" type="radio" value="3" >3</td>
+      <td><input name="SDS_item06" type="radio" value="2" >2</td>
+      <td><input name="SDS_item06" type="radio" value="1" checked >1</td>
+     </tr>
+     <tr>
+      <td><label>7. 我感到體重減輕</label></td>
+      
+      <td><input name="SDS_item07" type="radio" value="1" checked >1</td>
+      <td><input name="SDS_item07" type="radio" value="2" >2</td>
+      <td><input name="SDS_item07" type="radio" value="3" >3</td>
+      <td><input name="SDS_item07" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>8. 我為便秘煩惱</label></td>
+      
+      <td><input name="SDS_item08" type="radio" value="1" checked >1</td>
+      <td><input name="SDS_item08" type="radio" value="2" >2</td>
+      <td><input name="SDS_item08" type="radio" value="3" >3</td>
+      <td><input name="SDS_item08" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>9. 我的心跳比平時快</label></td>
+      
+       <td><input name="SDS_item09" type="radio" value="1" checked >1</td>
+      <td><input name="SDS_item09" type="radio" value="2" >2</td>
+      <td><input name="SDS_item09" type="radio" value="3" >3</td>
+      <td><input name="SDS_item09" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>10. 我無故感到疲勞</label></td>
+      
+      <td><input name="SDS_item10" type="radio" value="1" checked >1</td>
+      <td><input name="SDS_item10" type="radio" value="2" >2</td>
+      <td><input name="SDS_item10" type="radio" value="3" >3</td>
+      <td><input name="SDS_item10" type="radio" value="4" >4</td>
+     </tr>
+     <tr>
+      <td><label>11. 我的頭腦像往常一樣清楚</label></td>
+      
+       <td><input name="SDS_item11" type="radio" value="4">4</td>
+      <td><input name="SDS_item11" type="radio" value="3" >3</td>
+      <td><input name="SDS_item11" type="radio" value="2" >2</td>
+      <td><input name="SDS_item11" type="radio" value="1" checked >1</td>
+     </tr>
+     <tr>
+      <td><label>12. 我做事情像平時一樣不感到困難</label></td>
+      
+       <td><input name="SDS_item12" type="radio" value="4" >4</td>
+      <td><input name="SDS_item12" type="radio" value="3" >3</td>
+      <td><input name="SDS_item12" type="radio" value="2" >2</td>
+      <td><input name="SDS_item12" type="radio" value="1" checked >1</td>
+     </tr>
+      <tr>
+      <td><label>13. 我坐臥不安，難以保持平靜</label></td>
+      
+      <td><input name="SDS_item13" type="radio" value="4" >4</td>
+      <td><input name="SDS_item13" type="radio" value="3" >3</td>
+      <td><input name="SDS_item13" type="radio" value="2" >2</td>
+      <td><input name="SDS_item13" type="radio" value="1" checked >1</td>
+     </tr>
+      <tr>
+      <td><label>14. 我對未來感到有希望</label></td>
+      
+      <td><input name="SDS_item14" type="radio" value="4" >4</td>
+      <td><input name="SDS_item14" type="radio" value="3" >3</td>
+      <td><input name="SDS_item14" type="radio" value="2" >2</td>
+      <td><input name="SDS_item14" type="radio" value="1" checked >1</td>
+     </tr>
+      <tr>
+      <td><label>15. 我比平時更容易激怒</label></td>
+      
+      <td><input name="SDS_item15" type="radio" value="1" checked >1</td>
+      <td><input name="SDS_item15" type="radio" value="2" >2</td>
+      <td><input name="SDS_item15" type="radio" value="3" >3</td>
+      <td><input name="SDS_item15" type="radio" value="4" >4</td>
+     </tr>
+      <tr>
+      <td><label>16. 我覺得決定什麼事很容易</label></td>
+      
+      <td><input name="SDS_item16" type="radio" value="4" >4</td>
+      <td><input name="SDS_item16" type="radio" value="3" >3</td>
+      <td><input name="SDS_item16" type="radio" value="2" >2</td>
+      <td><input name="SDS_item16" type="radio" value="1" checked >1</td>
+     </tr>
+      <tr>
+      <td><label>17. 我感到自已是有用的和不可缺少的人</label></td>
+      
+      <td><input name="SDS_item17" type="radio" value="4" >4</td>
+      <td><input name="SDS_item17" type="radio" value="3" >3</td>
+      <td><input name="SDS_item17" type="radio" value="2" >2</td>
+      <td><input name="SDS_item17" type="radio" value="1" checked >1</td>
+     </tr>
+      <tr>
+      <td><label>18. 我的生活很有意義</label></td>
+      
+      <td><input name="SDS_item18" type="radio" value="4" >4</td>
+      <td><input name="SDS_item18" type="radio" value="3" >3</td>
+      <td><input name="SDS_item18" type="radio" value="2" >2</td>
+      <td><input name="SDS_item18" type="radio" value="1" checked >1</td>
+     </tr>
+      <tr>
+      <td><label>19. 假若我死了別人會過得更好</label></td>
+      
+      <td><input name="SDS_item19" type="radio" value="4" >4</td>
+      <td><input name="SDS_item19" type="radio" value="3" >3</td>
+      <td><input name="SDS_item19" type="radio" value="2" >2</td>
+      <td><input name="SDS_item19" type="radio" value="1" checked >1</td>
+     </tr>
+      <tr>
+      <td><label>20. 我仍舊喜愛自己平時喜愛的東西</label></td>
+      
+      <td><input name="SDS_item20" type="radio" value="4" >4</td>
+      <td><input name="SDS_item20" type="radio" value="3" >3</td>
+      <td><input name="SDS_item20" type="radio" value="2" >2</td>
+      <td><input name="SDS_item20" type="radio" value="1" checked >1</td>
+     </tr>
+    
+    </tbody>
+</table>
+
+	</li>
+    
+	</div>
+    <div class="option-mainer">
+                
+                <li><input class="option-bnt" type="submit" value="提交">
+                </li>
+            </div>
+</div>
+</div>
+</form>
+
