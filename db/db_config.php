@@ -15,7 +15,7 @@ function connectMysql() {
 	$servername = "mysql.sql108.cdncenter.net";
 	$database = "sq_liujiedhu";
 	$username = "sq_liujiedhu";
-	$password = "xgx8267789";
+	$password = "admin";
 	
 	try {
 	    $db = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
